@@ -4,16 +4,15 @@ import com.hyun.undecemberdpscalculator.dto.DmgDto;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ZodiacLogic {
+public class SpeedZodiac {
 
-    long arrd;
+    DmgDto dmgdto = new DmgDto();
+    long speedPer;
 
-
-    public long getArr(){
-      DmgDto dmgDto = new DmgDto();
-      arrd = dmgDto.mainAttributeDmgIcPer = 5;
-      return arrd;
+    public long getSpeedPer2(){
+      return speedPer;
     }
+
 
 
 }
