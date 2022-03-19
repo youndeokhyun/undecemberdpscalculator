@@ -1,8 +1,19 @@
-package com.huyn.undecemberdpscalculator.service.zodiac;
+package com.hyun.undecemberdpscalculator.service.zodiac;
 
-import com.huyn.undecemberdpscalculator.service.Dmg;
+import com.hyun.undecemberdpscalculator.dto.DmgDto;
+import org.springframework.stereotype.Service;
 
-public class ZodiacLogic extends Dmg {
+@Service
+public class ZodiacLogic {
+
+    long arrd;
+
+
+    public long getArr(){
+      DmgDto dmgDto = new DmgDto();
+      arrd = dmgDto.mainAttributeDmgIcPer = 5;
+      return arrd;
+    }
 
 
 }
