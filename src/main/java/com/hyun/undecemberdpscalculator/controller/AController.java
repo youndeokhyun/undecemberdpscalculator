@@ -14,10 +14,10 @@ public class AController {
 
     @GetMapping("/")
     public String mainPage(Model model){
-
-        model.addAttribute("attack10" , attackZodiac.getAttack10());
-        model.addAttribute("attack5" , attackZodiac.getAttack5());
-        model.addAttribute("physic" , attackZodiac.getPhysicsDmg10());
+//
+//        model.addAttribute("attack10" , attackZodiac.getAttack10());
+//        model.addAttribute("attack5" , attackZodiac.getAttack5());
+//        model.addAttribute("physic" , attackZodiac.getPhysicsDmg10());
         return "index";
     }
 

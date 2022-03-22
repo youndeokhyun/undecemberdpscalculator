@@ -10,22 +10,12 @@ public class DmgDto {
     public long minMainAttributeDmgIc , maxMainAttributeDmgIc;
     public long mainAttributeDmgIcPer , mainAttributeIcDownPer;
     public long mainAttributeAcPer , mainAttributeAcDownPer;
-    public long speed,speedDown,speedAc,speedAcDown;
-    public long attackHitRaring;
+    public long attackOnHitPer , hitRating;
+    public long areaDmg,areaDmgAc;
+    public long attackSpeed,attackSpeedDown,attackSpeedAc,attackSpeedAcDown;
+    public long attackHitRating;
+    public long hpFlat, hpPer , hpAc , hpIc;
 
 
-    @Builder
-    public DmgDto(long minMainAttributeDmgIc , long maxMainAttributeDmgIc , long mainAttributeDmgIcPer , long mainAttributeIcDownPer ,long mainAttributeAcPer , long mainAttributeAcDownPer , long speed , long speedAc , long speedDown , long speedAcDown){
-      this.minMainAttributeDmgIc = minMainAttributeDmgIc;
-      this.maxMainAttributeDmgIc = maxMainAttributeDmgIc;
-      this.mainAttributeDmgIcPer = mainAttributeDmgIcPer;
-      this.mainAttributeIcDownPer = mainAttributeIcDownPer;
-      this.mainAttributeAcPer = mainAttributeAcPer;
-      this.mainAttributeAcDownPer = mainAttributeAcDownPer;
-      this.speed = speed;
-      this.speedAc = speedAc;
-      this.speedAcDown = speedAcDown;
-      this.speedDown = speedDown;
-    }
 
 }
