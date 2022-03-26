@@ -7,14 +7,14 @@ import lombok.*;
 @NoArgsConstructor
 public class DmgDto {
 
-    public long minMainAttributeDmgIc , maxMainAttributeDmgIc;
-    public long mainAttributeDmgIcPer , mainAttributeIcDownPer;
-    public long mainAttributeAcPer , mainAttributeAcDownPer;
-    public long attackOnHitPer , hitRating;
-    public long areaDmg,areaDmgAc;
-    public long attackSpeed,attackSpeedDown,attackSpeedAc,attackSpeedAcDown;
-    public long attackHitRating;
-    public long hpFlat, hpPer , hpAc , hpIc;
+    private long minDmgIc , maxDmgIc;
+    private long dmgIcPer , dmgIcDownPer;
+    private long dmgAcPer , dmgAcDownPer;
+    private long attackOnHitPer , hitRating;
+    private long areaDmg,areaDmgAc;
+    private long attackSpeed,attackSpeedDown,attackSpeedAc,attackSpeedAcDown;
+    private long attackHitRating;
+    private long hpFlat, hpPer , hpAc , hpIc;
 
 
 

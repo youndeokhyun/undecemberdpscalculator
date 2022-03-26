@@ -1,5 +1,6 @@
 package com.hyun.undecemberdpscalculator.service;
 
+import com.hyun.undecemberdpscalculator.service.zodiac.t1.Afros;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -9,26 +10,25 @@ public class PhysicsCalculator implements DmgInter{
     public long minBasicDmg , maxBasicDmg; // 최소 최대 기본 피해
     public long minAllDmg , maxAllDmg; //  전체 계산식 최소 최대
 
-
-
     @Override
     public long minBasicCalculator() {
-        return minBasicDmg;
+       return 0;
+
     }
 
     @Override
     public long maxBasicCalculator() {
-        return maxBasicDmg;
+        return 0;
     }
 
     @Override
     public long minDmgCalculator() {
-        return minAllDmg;
+        return 0;
     }
 
     @Override
     public long maxDmgCalculator() {
-        return maxAllDmg;
+        return 0;
     }
 
 

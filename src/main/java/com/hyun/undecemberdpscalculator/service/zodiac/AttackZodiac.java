@@ -13,13 +13,13 @@ public class AttackZodiac {
 
     // 물리 피해
     public long getPhysicsDmg10(){
-        dmgDto.mainAttributeDmgIcPer = 10;
-        physicsDmg = dmgDto.mainAttributeDmgIcPer;
+        dmgDto.setDmgIcPer(10);
+        physicsDmg = dmgDto.getDmgIcPer();
         return physicsDmg;
     }
     public long getPhysicsDmg30(){
-        dmgDto.mainAttributeDmgIcPer = 30;
-        physicsDmg = dmgDto.mainAttributeDmgIcPer;
+        dmgDto.setDmgIcPer(30);
+        physicsDmg = dmgDto.getDmgIcPer();
         return physicsDmg;
     }
 

@@ -10,23 +10,23 @@ public class Forest {
     long hitRating;
 
     public long getNomalDmg10() {
-        dmgDto.mainAttributeDmgIcPer = 10;
-        nomalDmg =dmgDto.mainAttributeDmgIcPer;
+        dmgDto.setDmgIcPer(10);
+        nomalDmg = dmgDto.getDmgIcPer();
         return nomalDmg;
     }
     public long getNomalDmg20() {
-        dmgDto.mainAttributeDmgIcPer = 20;
-        nomalDmg =dmgDto.mainAttributeDmgIcPer;
+        dmgDto.setDmgIcPer(20);
+        nomalDmg = dmgDto.getDmgIcPer();
         return nomalDmg;
     }
     public long getAttackHitRating10(){
-        dmgDto.attackHitRating = 10;
-        hitRating = dmgDto.attackHitRating;
+        dmgDto.setAttackHitRating(10);
+        hitRating = dmgDto.getAttackHitRating();
         return hitRating;
     }
     public long getPhysicDmg10() {
-        dmgDto.mainAttributeDmgIcPer = 10;
-        physicDmg = dmgDto.mainAttributeDmgIcPer;
+        dmgDto.setDmgIcPer(10);
+        physicDmg = dmgDto.getDmgIcPer();
         return physicDmg;
     }
 }

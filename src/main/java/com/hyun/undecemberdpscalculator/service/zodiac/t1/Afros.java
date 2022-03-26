@@ -9,33 +9,34 @@ public class Afros {
     long attackOnHitRating;
     long attackSpeed;
     long hp;
+
     // 공격시 피해
     public long getAttack5(){
-        dmgDto.mainAttributeDmgIcPer = 5;
-        attack = dmgDto.mainAttributeDmgIcPer;
+        dmgDto.setDmgIcPer(5);
+        attack = dmgDto.getDmgIcPer();
         return attack;
     }
     public long getAttack10(){
-        dmgDto.mainAttributeDmgIcPer = 10;
-        attack = dmgDto.mainAttributeDmgIcPer;
+        dmgDto.setDmgIcPer(10);
+        attack = dmgDto.getDmgIcPer();
         return attack;
     }
     // 공격 적중도
     public long getAttackHitRating10(){
-        dmgDto.attackHitRating = 10;
-        attackOnHitRating = dmgDto.attackHitRating;
+        dmgDto.setAttackHitRating(10);
+        attackOnHitRating = dmgDto.getAttackHitRating();
         return attackOnHitRating;
     }
     // 공속
     public long getAttackSpeed2(){
-        dmgDto.attackSpeed =2;
-        attackSpeed = dmgDto.attackSpeed;
+        dmgDto.setAttackSpeed(2);
+        attackSpeed = dmgDto.getAttackSpeed();
         return attackSpeed;
     }
     // hp
     public long getHp13(){
-        dmgDto.hpFlat = 13;
-        hp = dmgDto.hpFlat;
+        dmgDto.setHpFlat(13);
+        hp = dmgDto.getHpFlat();
         return hp;
     }
 
