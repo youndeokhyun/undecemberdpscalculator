@@ -4,7 +4,7 @@ import lombok.*;
 
 @Getter
 @Setter
-public class DmgDto {
+public  class DmgDto {
 
     private long minDmgIc , maxDmgIc; // 최대 최소뎀
     private long dmgIcPer , dmgIcDownPer; // %뎀 증가 감소  +
@@ -14,9 +14,4 @@ public class DmgDto {
     private long hp; // 체력
     private long mp; // 마나
     private long resist ,chaosResist; //저항
-
-
-
-
-
 }

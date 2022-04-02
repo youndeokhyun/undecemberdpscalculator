@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
     $("input[name=attack]").on("click" , function (){
         let arr = [];
          $("input[name=attack]:checked").each(function (){

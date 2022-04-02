@@ -29,6 +29,15 @@ public class AttackZodiac extends ZodiacAB {
         attackDmg = dmgDto.getDmgIcPer();
         return attackDmg;
     }
+    //  광전사 로직
+    //    public long berserkerNesting(){
+//        long berserker= 10;
+//    long hit = 0;
+//            for(int i =0; i<berserker; i++){
+//        hit += 3;
+//        System.out.println(hit);
+//        return hit;
+//    }
 
     // 주문시 피해
     public long getSpellDmg5() {

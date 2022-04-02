@@ -71,6 +71,4 @@ public class PropertyZodiac extends ZodiacAB{
         poisonDmg = dmgDto.getDmgIcPer();
         return poisonDmg;
     }
-
-
 }

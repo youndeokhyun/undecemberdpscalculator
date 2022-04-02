@@ -21,18 +21,21 @@ public class Afros extends ZodiacAB{
         attackDmg = dmgDto.getDmgIcPer();
         return attackDmg;
     }
+
     // 공격 적중도
     public long getAttackHitRating10(){
         dmgDto.setHitRating(10);
         attackRating = dmgDto.getHitRating();
         return attackRating;
     }
+
     // 공속
     public long getAttackSpeed2(){
         dmgDto.setSpeedIc(2);
         attackSpeed = dmgDto.getSpeedIc();
         return attackSpeed;
     }
+
     // hp
     public long getHp13(){
         dmgDto.setHp(13);
