@@ -1,14 +1,15 @@
 package com.hyun.undecemberdpscalculator.service.zodiac.t2;
 
 import com.hyun.undecemberdpscalculator.dto.DmgDto;
+import com.hyun.undecemberdpscalculator.service.ZodiacAB;
+import org.springframework.stereotype.Service;
 
-public class Forest {
+@Service
+public class Forest extends ZodiacAB{
 
     DmgDto dmgDto =new DmgDto();
-    long nomalDmg;
-    long physicDmg;
-    long hitRating;
 
+    // 피해
     public long getNomalDmg10() {
         dmgDto.setDmgIcPer(10);
         nomalDmg = dmgDto.getDmgIcPer();
@@ -19,14 +20,25 @@ public class Forest {
         nomalDmg = dmgDto.getDmgIcPer();
         return nomalDmg;
     }
+    // 적중도
     public long getAttackHitRating10(){
-        dmgDto.setAttackHitRating(10);
-        hitRating = dmgDto.getAttackHitRating();
-        return hitRating;
+        dmgDto.setHitRating(10);
+        rating = dmgDto.getHitRating();
+        return rating;
     }
+    // 물피
     public long getPhysicDmg10() {
         dmgDto.setDmgIcPer(10);
         physicDmg = dmgDto.getDmgIcPer();
         return physicDmg;
     }
+    //원소피해
+    public long getElementDmg() {
+        dmgDto.setDmgIcPer(10);
+        elementDmg = dmgDto.getDmgIcPer();
+        return elementDmg;
+    }
+
+
+
 }

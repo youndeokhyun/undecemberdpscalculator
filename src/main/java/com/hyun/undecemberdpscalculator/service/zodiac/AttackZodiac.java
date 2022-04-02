@@ -1,26 +1,56 @@
 package com.hyun.undecemberdpscalculator.service.zodiac;
 
 import com.hyun.undecemberdpscalculator.dto.DmgDto;
+import com.hyun.undecemberdpscalculator.service.ZodiacAB;
 import org.springframework.stereotype.Service;
 
 @Service
-public class AttackZodiac {
+public class AttackZodiac extends ZodiacAB {
     DmgDto dmgDto = new DmgDto();
-    long attack;
-    long attackHitRating;
-    long physicsDmg;
 
-
-    // 물리 피해
-    public long getPhysicsDmg10(){
+    // 공격 시 피해
+    public long getAttack5(){
+        dmgDto.setDmgIcPer(5);
+        attackDmg = dmgDto.getDmgIcPer();
+        return attackDmg;
+    }
+    public long getAttack10(){
         dmgDto.setDmgIcPer(10);
-        physicsDmg = dmgDto.getDmgIcPer();
-        return physicsDmg;
+        attackDmg = dmgDto.getDmgIcPer();
+        return attackDmg;
     }
-    public long getPhysicsDmg30(){
-        dmgDto.setDmgIcPer(30);
-        physicsDmg = dmgDto.getDmgIcPer();
-        return physicsDmg;
+    public long getAttack15(){
+        dmgDto.setDmgIcPer(15);
+        attackDmg = dmgDto.getDmgIcPer();
+        return attackDmg;
     }
+    public long getAttack20(){
+        dmgDto.setDmgIcPer(20);
+        attackDmg = dmgDto.getDmgIcPer();
+        return attackDmg;
+    }
+
+    // 주문시 피해
+    public long getSpellDmg5() {
+        dmgDto.setDmgIcPer(5);
+        spellDmg =dmgDto.getDmgIcPer();
+        return spellDmg;
+    }
+    public long getSpellDmg10() {
+        dmgDto.setDmgIcPer(10);
+        spellDmg =dmgDto.getDmgIcPer();
+        return spellDmg;
+    }
+    public long getSpellDmg15() {
+        dmgDto.setDmgIcPer(15);
+        spellDmg =dmgDto.getDmgIcPer();
+        return spellDmg;
+    }
+    public long getSpellDmg20() {
+        dmgDto.setDmgIcPer(20);
+        spellDmg =dmgDto.getDmgIcPer();
+        return spellDmg;
+    }
+
 
 }

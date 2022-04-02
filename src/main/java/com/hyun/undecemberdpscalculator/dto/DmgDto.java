@@ -4,17 +4,18 @@ import lombok.*;
 
 @Getter
 @Setter
-@NoArgsConstructor
 public class DmgDto {
 
-    private long minDmgIc , maxDmgIc;
-    private long dmgIcPer , dmgIcDownPer;
-    private long dmgAcPer , dmgAcDownPer;
-    private long attackOnHitPer , hitRating;
-    private long areaDmg,areaDmgAc;
-    private long attackSpeed,attackSpeedDown,attackSpeedAc,attackSpeedAcDown;
-    private long attackHitRating;
-    private long hpFlat, hpPer , hpAc , hpIc;
+    private long minDmgIc , maxDmgIc; // 최대 최소뎀
+    private long dmgIcPer , dmgIcDownPer; // %뎀 증가 감소  +
+    private long dmgAcPer , dmgAcDownPer; // %뎀 증폭 감폭  *
+    private long hitRating; // 적중도
+    private long SpeedIc,SpeedIcDown,SpeedAc,SpeedAcDown; // 공속 시속
+    private long hp; // 체력
+    private long mp; // 마나
+    private long resist ,chaosResist; //저항
+
+
 
 
 

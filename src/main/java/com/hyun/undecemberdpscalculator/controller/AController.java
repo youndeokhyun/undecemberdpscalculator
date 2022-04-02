@@ -17,7 +17,6 @@ import javax.swing.*;
 @AllArgsConstructor
 public class AController {
    // localstorage 사용
-
     @GetMapping("/")
     public String mainPage(Model model){
         Afros afros = new Afros();
@@ -27,8 +26,5 @@ public class AController {
         model.addAttribute("rating10" ,afros.getAttackHitRating10());
         return "index";
     }
-
-
-
 
 }
