@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html  lagn="ko"
+       xmlns:th="http://www.thymeleaf.org"
+       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 이 영역에 공통으로 사용할 css, js library를 선언한다. -->
+    <link rel="stylesheet" th:href="@{/static/css/style.css}">
+    <link rel="stylesheet" th:href="@{/static/css/plugin/all.css}">
+    <link rel="stylesheet" th:href="@{/static/css/plugin/bootstrap.css}">
+    <script  th:src="@{/static/js/plugin/jquery-1.12.4.js}"></script>
+    <script  th:src="@{/static/js/plugin/popper.min.js}"></script>
+    <script  th:src="@{/static/js/plugin/bootstrap.js}"></script>
+    <script  th:src="@{/static/js/localStorage.js}"></script>
+    <script  th:src="@{/static/js/header.js}"></script>
+</head>
+<body>
+   <!-- header -->
+   <th:block th:replace="fragment/header :: headerFragment" />
+   <!-- header 끝 -->
+
+   <!-- content -->
+   <th:block layout:fragment="contentFragment"/>
+   <!-- content 끝-->
+
+   <!-- footer -->
+   <th:block th:replace="fragment/footer ::footerFragment"/>
+   <!-- footer  끝-->
+
+</body>
+</html>

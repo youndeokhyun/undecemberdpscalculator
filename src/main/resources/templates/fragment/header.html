@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.w3.org/1999/xhtml">
+<header th:fragment="headerFragment">
+    <div class="container">
+        <h3 class="text-center"> 조디악 dps계산기</h3>
+        <div class="lvandPoint">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="input-group">
+                        <label class="input-group-text"> 레벨</label>
+                        <input type="number" class="level" name="level" value="0">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="input-group">
+                        <label class="input-group-text"> 포인트</label>
+                        <input type="number" class="skillPoint" name="skillPoint" value="0" readonly>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="headLink">
+            <div class="row">
+                <div class="col-3">
+                    <a th:href="@{/}" class="mainPageLink"> 메인 페이지 </a>
+                </div>
+                <div class="col-3">
+                    <a th:href="@{/zodiac}" calss="zodiacMainPage"> 조디악 메인페이지 </a>
+                </div>
+            </div>
+        </div>
+        <p class="p"></p>
+    </div>
+</header>
+</html>
