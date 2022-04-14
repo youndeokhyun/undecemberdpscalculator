@@ -23,6 +23,7 @@ $(document).ready(function () {
     // 체크시 다음 스킬 체크박스 활성화 및 다음스킬 페이지 활성화
     let cbLength = 0
     $(".a").on("click", function () {
+
         let usedSkillPoint = $(".usedSkillPoint").val();
         if ($(this).is(":checked") === true) {
             usedSkillPoint++
@@ -35,6 +36,7 @@ $(document).ready(function () {
         }
         $(".usedSkillPoint").val(localStorage.getItem("usp"))
         cbDisabled();
+        console.log(cbLength)
 
     })
 
@@ -78,39 +80,47 @@ $(document).ready(function () {
     // 체크시 다음 스킬 체크박스 활성화
     function cbDisabled() {
         switch (cbLength) {
+            case 0:
+                $("#start").prop("disabled", false);
+                $(".first").prop("disabled" , true);
+                break
             case 1:
                 $(".first").prop("disabled", false);
+                $(".second").prop("disabled", true);
                 break
             case 2:
                 $(".second").prop("disabled", false);
+                $(".third").prop("disabled", true);
                 break
             case 3:
                 $(".third").prop("disabled", false);
+                $(".fourth").prop("disabled", true);
                 break
             case 4:
                 $(".fourth").prop("disabled", false);
+                $(".fifth").prop("disabled", true);
                 break
             case 5:
                 $(".fifth").prop("disabled", false);
                 break
         }
     }
-
-    // 체크박스 체크한 개수에 따라 다음 스킬페이지 오픈
-    function nextSkillSDisabled() {
-        switch (localStorage.getItem("usp")) {
-            // 일반 스킬
-            case 5 :
-            case 10 :
-            case 15 :
-            case 29 :
-            case 36 :
-            case 52 :
-            case 61 :
-            // 전문화
-            case 22 :
-            case 45 :
-            case 70 :
-        }
-    }
+    //
+    // // 체크박스 체크한 개수에 따라 다음 스킬페이지 오픈
+    // function nextSkillSDisabled() {
+    //     switch (localStorage.getItem("usp")) {
+    //         // 일반 스킬
+    //         case 5 :
+    //         case 10 :
+    //         case 15 :
+    //         case 29 :
+    //         case 36 :
+    //         case 52 :
+    //         case 61 :
+    //         // 전문화
+    //         case 22 :
+    //         case 45 :
+    //         case 70 :
+    //     }
+    // }
 })

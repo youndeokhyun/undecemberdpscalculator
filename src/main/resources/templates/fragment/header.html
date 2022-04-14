@@ -27,12 +27,15 @@
                     </div>
                 </div>
             </div>
-            <input type="checkbox" class="a" id="start">
-            <input type="checkbox" class="a first"  >
-            <input type="checkbox" class="a second" >
-            <input type="checkbox" class="a third"  >
-            <input type="checkbox" class="a fourth" >
-            <input type="checkbox" class="a fifth"  >
+            <form th:action="@{/result}"  method="post">
+                <input type="checkbox" class="a" value="5" id="start">
+                <input type="checkbox" class="a first"  name="dmgIcPer" value="5">
+                <input type="checkbox" class="a second" name="dmgIcPer" value="10">
+                <input type="checkbox" class="a third"  name="dmgIcPer" value="12">
+                <input type="checkbox" class="a fourth" name="dmgAcPer" value="13">
+                <input type="checkbox" class="a fifth"  name="dmgAcPer" value="17">
+                <button type="submit"> 적용 </button>
+            </form>
         </div>
         <div class="headLink">
             <div class="row">

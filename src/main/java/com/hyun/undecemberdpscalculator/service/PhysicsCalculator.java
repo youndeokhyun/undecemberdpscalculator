@@ -1,7 +1,7 @@
 package com.hyun.undecemberdpscalculator.service;
 
-import com.hyun.undecemberdpscalculator.service.zodiac.t1.Afros;
 import org.springframework.stereotype.Service;
+
 
 @Service
 public class PhysicsCalculator implements DmgInter{

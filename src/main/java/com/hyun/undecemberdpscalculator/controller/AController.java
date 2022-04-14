@@ -1,19 +1,25 @@
 package com.hyun.undecemberdpscalculator.controller;
 
-import com.hyun.undecemberdpscalculator.service.zodiac.t1.Afros;
-import lombok.AllArgsConstructor;
+import com.hyun.undecemberdpscalculator.dto.DmgDto;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
-@AllArgsConstructor
 public class AController {
+
 
 
     @GetMapping("/")
     public String mainPage(){
         return "main";
+    }
+
+    @PostMapping("/result")
+    public String aaa(DmgDto dmgDto){
+        DmgDto dto = new DmgDto();
+        dto.setDmgIcPer(dmgDto.dmgIcPer);
+        return "redirect:/";
     }
 
     // 메인
