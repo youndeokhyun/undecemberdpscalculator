@@ -61,7 +61,6 @@ $(document).ready(function () {
         }
         localStorage.setItem("sp", $(".skillPoint").val());
     })
-
     // 초기화 버튼
     $(".resetBtn").on("click", function () {
         if (confirm("정말 초기화 하시겠습니까?")) {
@@ -77,6 +76,8 @@ $(document).ready(function () {
             return
         }
     })
+
+
     // 체크시 다음 스킬 체크박스 활성화
     function cbDisabled() {
         switch (cbLength) {

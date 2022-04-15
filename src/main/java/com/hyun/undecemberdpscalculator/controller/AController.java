@@ -5,6 +5,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import java.util.List;
+
 @Controller
 public class AController {
 
@@ -15,12 +17,11 @@ public class AController {
         return "main";
     }
 
-    @PostMapping("/result")
-    public String aaa(DmgDto dmgDto){
-        DmgDto dto = new DmgDto();
-        dto.setDmgIcPer(dmgDto.dmgIcPer);
-        return "redirect:/";
+    @PostMapping("/")
+    public String checkBox(){
+        return "main";
     }
+
 
     // 메인
     @GetMapping("/zodiac")
