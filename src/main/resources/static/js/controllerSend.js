@@ -12,5 +12,6 @@ $(document).ready(function() {
          //     num += Number(arr[i]);
          //     console.log(num)
          // }
+
     })
 })
