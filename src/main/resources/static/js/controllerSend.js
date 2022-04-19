@@ -1,17 +1,20 @@
 $(document).ready(function() {
+    let  dmgIcArr = [];
     $("input[name=dmgIcPer]").on("click" , function (){
-        let  arr = [];
+
          $("input[name=dmgIcPer]:checked").each(function (){
-             arr.push($(this).val());
-             localStorage.setItem("attack" , JSON.stringify(arr));
+             dmgIcArr.push($(this).val());
          })
-
-
-         // let num = 0;
-         // for(let i = 0; i<arr.length; i++){
-         //     num += Number(arr[i]);
-         //     console.log(num)
-         // }
-
     })
+    // $(".submit").on("click" , function (){
+    //
+    //     $.ajax({
+    //         url:"/"
+    //         ,type: "post"
+    //         ,dataType: "json"
+    //         ,data: {
+    //             dmgIcArr : dmgIcArr
+    //         }
+    //     });
+    // })
 })

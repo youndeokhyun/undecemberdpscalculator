@@ -2,9 +2,12 @@ package com.hyun.undecemberdpscalculator.controller;
 
 import com.hyun.undecemberdpscalculator.dto.DmgDto;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @Controller
@@ -13,13 +16,16 @@ public class AController {
 
 
     @GetMapping("/")
-    public String mainPage(){
+    public String mainPage(Model model){
+        DmgDto dto = new DmgDto();
         return "main";
     }
 
-    @PostMapping("/")
-    public String checkBox(){
-        return "main";
+    @PostMapping("/zodiacform")
+    public String zodiacApply(HttpServletRequest request ){
+        String referer = request.getHeader("referer");
+
+        return "redirect:"+referer;
     }
 
 
