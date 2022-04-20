@@ -1,13 +1,15 @@
 package com.hyun.undecemberdpscalculator.controller;
 
 import com.hyun.undecemberdpscalculator.dto.DmgDto;
+import com.hyun.undecemberdpscalculator.service.zodiac.Service;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -17,12 +19,16 @@ public class AController {
 
     @GetMapping("/")
     public String mainPage(Model model){
-        DmgDto dto = new DmgDto();
         return "main";
     }
 
     @PostMapping("/zodiacform")
-    public String zodiacApply(HttpServletRequest request ){
+    public String zodiacApply(HttpServletRequest request ,DmgDto dto){
+        DmgDto dmgDto = new DmgDto();
+//        dmgDto.setDmgIcPer(dto.getDmgIcPer());
+//        System.out.println(dto.getDmgIcPer());
+//        System.out.println(dmgDto.getDmgIcPer());
+
         String referer = request.getHeader("referer");
 
         return "redirect:"+referer;

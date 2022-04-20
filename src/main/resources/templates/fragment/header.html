@@ -28,15 +28,16 @@
                 </div>
             </div>
             <form th:action="@{/zodiacform}" method="post">
-                <input type="checkbox" class="a" name="dmgIcPer" value="5" id="start">
-                <input type="checkbox" class="a first" name="dmgIcPer" value="10">
-                <input type="checkbox" class="a second" name="dmgIcPer" value="10">
-                <input type="checkbox" class="a third" name="dmgIcPer" value="12">
-                <input type="checkbox" class="a fourth" name="dmgAcPer" value="13">
-                <input type="checkbox" class="a fifth" name="dmgAcPer" value="17">
+                <input type="hidden" name="attackDmg" id="attackDmg">
                 <input type="submit" class="submit" placeholder="적용">
             </form>
-            <div th:text="${mo}"></div>
+            <input type="checkbox" class="a attack"   value="5" id="start">
+            <input type="checkbox" class="a first attack"  value="9">
+            <input type="checkbox" class="a second attack" value="10">
+            <input type="checkbox" class="a third attack"  value="12">
+            <input type="checkbox" class="a fourth attack"  value="13">
+            <input type="checkbox" class="a fifth attack" value="17">
+
         </div>
         <div class="headLink">
             <div class="row">

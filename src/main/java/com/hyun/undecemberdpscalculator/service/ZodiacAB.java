@@ -19,7 +19,7 @@ public abstract class ZodiacAB{
    public long abyssSpeed, abyssSpellSpeed, catapultSpeed, KnightSpeed; // 심연체 공시속 , 쇠뇌 공속 , 기사 공속
    public long hpFlat, hpPer, hpAc; // hp 플렛 증가 증폭
    public long mpFlat, mpPer, mpAc; // mp 플렛 증가 증폭
-   public long elementResist,fireResist, iceResist ,lightningResist ,poisonResist,chaosResist;
+   public long elementResist,fireResist, iceResist ,lightningResist ,poisonResist,chaosResist; // 각각의 저항
 
 
 }
