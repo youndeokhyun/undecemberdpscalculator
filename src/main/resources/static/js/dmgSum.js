@@ -4,6 +4,7 @@ $(document).ready(function () {
          $("#attackDmg").val(attack);
          // $("#attackDmg").attr("value" , attack);
          console.log($(".attackDmg").val());
+
      })
 
 })
