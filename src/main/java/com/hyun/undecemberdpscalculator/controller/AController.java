@@ -25,10 +25,9 @@ public class AController {
     @PostMapping("/zodiacform")
     public String zodiacApply(HttpServletRequest request ,DmgDto dto){
         DmgDto dmgDto = new DmgDto();
-//        dmgDto.setDmgIcPer(dto.getDmgIcPer());
-//        System.out.println(dto.getDmgIcPer());
-//        System.out.println(dmgDto.getDmgIcPer());
-
+//        dmgDto.setAttackDmg(dto.getAttackDmg());
+//        System.out.println(dto.getAttackDmg());
+//        System.out.println(dmgDto.getAttackDmg());
         String referer = request.getHeader("referer");
 
         return "redirect:"+referer;

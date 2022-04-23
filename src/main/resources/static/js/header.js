@@ -36,7 +36,6 @@ $(document).ready(function () {
         }
         $(".usedSkillPoint").val(localStorage.getItem("usp"))
         cbDisabled();
-        console.log(cbLength)
 
     })
 
