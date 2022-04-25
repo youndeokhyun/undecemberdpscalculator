@@ -18,11 +18,11 @@ $(document).ready(function () {
         localStorage.setItem("sp", $(".skillPoint").val());
     })
     // 처음을 제외한 모든 체크박스 비활성화
-    $(".a").prop("disabled", true);
+    $(".zodiacSkill").prop("disabled", true);
     $("#start").prop("disabled", false);
     // 체크시 다음 스킬 체크박스 활성화 및 다음스킬 페이지 활성화
     let cbLength = 0
-    $(".a").on("click", function () {
+    $(".zodiacSkill").on("click", function () {
 
         let usedSkillPoint = $(".usedSkillPoint").val();
         if ($(this).is(":checked") === true) {
@@ -46,14 +46,14 @@ $(document).ready(function () {
 
 
     //출력한 skillPoint를 체크박스 체크/해체 마다 1씩 감소/증가
-    $(".a").change(function () {
+    $(".zodiacSkill").change(function () {
         if ($(this).is(':checked')) {
             $(".skillPoint").val(parseInt(localStorage.getItem("sp")) - 1);
             if ($(".skillPoint").val() < 0) {
                 alert("포인트를 모두 소진했습니다");
                 $(this).val(0);
                 $(".skillPoint").val(parseInt(localStorage.getItem("sp")) + 1);
-                $(".a:checked").last().prop("checked", false);
+                $(".zodiacSkill:checked").last().prop("checked", false);
             }
         } else {
             $(".skillPoint").val(parseInt(localStorage.getItem("sp")) + 1);
@@ -64,11 +64,11 @@ $(document).ready(function () {
     $(".resetBtn").on("click", function () {
         if (confirm("정말 초기화 하시겠습니까?")) {
             localStorage.clear();
-            $(".a").prop("checked", false);
+            $(".zodiacSkill").prop("checked", false);
             $(".level").val(0);
             $(".skillPoint").val(0);
             $(".usedSkillPoint").val(0);
-            $(".a").prop("disabled", true);
+            $(".zodiacSkill").prop("disabled", true);
             $("#start").prop("disabled", false);
             cbLength = 0;
         } else {

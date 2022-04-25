@@ -2,7 +2,7 @@
 <html lang="ko" xmlns:th="http://www.w3.org/1999/xhtml">
 <header th:fragment="headerFragment">
     <div class="container">
-        <h3 class="text-center"> 조디악 dps계산기</h3>
+       <a th:href="@{/}"><h3 class="text-center" > 조디악 dps계산기</h3></a>
         <div class="lvandPoint">
             <div class="row">
                 <div class="col-lg-3">
@@ -31,12 +31,13 @@
                 <input type="hidden" name="attackDmg" id="attackDmg">
                 <input type="submit" class="submit" placeholder="적용">
             </form>
-            <input type="checkbox" class="a attack" name="attack" value="5" id="start">
-            <input type="checkbox" class="a first attack" name="attack"   value="9">
-            <input type="checkbox" class="a second attack" name="attack" value="10">
-            <input type="checkbox" class="a third attack" name="attack"  value="12">
-            <input type="checkbox" class="a fourth attack" name="attack"  value="13">
-            <input type="checkbox" class="a fifth attack" name="attack" value="17">
+            <input type="checkbox" class="zodiacSkill attack" name="attack" value="6" id="start">
+            <input type="checkbox" class="zodiacSkill first attack" name="attack"   value="9">
+            <input type="checkbox" class="zodiacSkill second attack" name="attack" value="11">
+            <input type="checkbox" class="zodiacSkill third attack" name="attack"  value="12">
+            <input type="checkbox" class="zodiacSkill fourth attack" name="attack"  value="13">
+            <input type="checkbox" class="zodiacSkill fifth attack" name="attack" value="17">
+            <button type="button" class="btn" onclick="dmgArr()"> 적용  </button>
 
         </div>
         <div class="headLink">
