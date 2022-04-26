@@ -29,15 +29,8 @@
             </div>
             <form th:action="@{/zodiacform}" method="post">
                 <input type="hidden" name="attackDmg" id="attackDmg">
-                <input type="submit" class="submit" placeholder="적용">
+                <button type="submit" class="submitBtn"> 적용 </button>
             </form>
-            <input type="checkbox" class="zodiacSkill attack" name="attack" value="6" id="start">
-            <input type="checkbox" class="zodiacSkill first attack" name="attack"   value="9">
-            <input type="checkbox" class="zodiacSkill second attack" name="attack" value="11">
-            <input type="checkbox" class="zodiacSkill third attack" name="attack"  value="12">
-            <input type="checkbox" class="zodiacSkill fourth attack" name="attack"  value="13">
-            <input type="checkbox" class="zodiacSkill fifth attack" name="attack" value="17">
-            <button type="button" class="btn" onclick="dmgArr()"> 적용  </button>
 
         </div>
         <div class="headLink">

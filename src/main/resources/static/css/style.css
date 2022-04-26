@@ -43,3 +43,13 @@ a:hover {
    padding-bottom: 10px;
    text-decoration: none;
 }
+/*조디악 찍는 페이지*/
+.imgBox{
+    position: relative;
+}
+.zodiacSkill{
+    border-radius: 50%;
+    zoom: 3;
+    cursor: pointer;
+    position: absolute;
+}

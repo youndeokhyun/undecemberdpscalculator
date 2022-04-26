@@ -68,6 +68,7 @@ $(document).ready(function () {
             $(".level").val(0);
             $(".skillPoint").val(0);
             $(".usedSkillPoint").val(0);
+            $("#attackDmg").val(0);
             $(".zodiacSkill").prop("disabled", true);
             $("#start").prop("disabled", false);
             cbLength = 0;

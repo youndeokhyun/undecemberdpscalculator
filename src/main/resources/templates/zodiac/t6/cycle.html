@@ -1,5 +1,13 @@
-<div  th:insert="commit/zodiacHeader.html" id="header" ></div>
-<body>
-순환
-</body>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/default_layout}">
+<head>
+</head>
+<div layout:fragment="contentFragment">
+    <input type="checkbox" name="zodiacSkill" class="zodiacSkill">
+    <input type="checkbox" name="zodiacSkill" class="zodiacSkill">
+    <input type="checkbox" name="zodiacSkill" class="zodiacSkill">
+    <input type="checkbox" name="zodiacSkill" class="zodiacSkill">
+</div>
+
 </html>
