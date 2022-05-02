@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     //레벨에 따라 스킬포인트 수정
     $(".level").on("change keyup paste", function () {
         let lv = $(".level").val();
@@ -36,7 +35,6 @@ $(document).ready(function () {
         }
         $(".usedSkillPoint").val(localStorage.getItem("usp"))
         cbDisabled();
-
     })
 
     // 저장한 값을 출력

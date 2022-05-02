@@ -1,6 +1,8 @@
 package com.hyun.undecemberdpscalculator.service.skill;
 
-public class Cyclone {
+
+
+public class Cyclone  {
 
 
 }

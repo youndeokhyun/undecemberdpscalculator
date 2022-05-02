@@ -48,8 +48,16 @@ a:hover {
     position: relative;
 }
 .zodiacSkill{
-    border-radius: 50%;
-    zoom: 3;
-    cursor: pointer;
     position: absolute;
+    width: 2.9rem;
+    height: 2.9rem;
+    border-radius: 50%;
+    border: 1px solid #999;
+    appearance: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.zodiacSkill:checked{
+    background: #32e732;
+    border: none;
 }

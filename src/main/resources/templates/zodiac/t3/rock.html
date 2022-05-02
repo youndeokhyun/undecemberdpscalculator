@@ -4,10 +4,22 @@
 <head>
 </head>
 <div layout:fragment="contentFragment">
-    <input type="checkbox" name="zodiacSkill" class="zodiacSkill">
-    <input type="checkbox" name="zodiacSkill" class="zodiacSkill">
-    <input type="checkbox" name="zodiacSkill" class="zodiacSkill">
-    <input type="checkbox" name="zodiacSkill" class="zodiacSkill">
+    <div class="container">
+        <div class="imgBox">
+            <img src="/static/img/t3/rock.png" class="img" alt="바위" style="width: 1120px;">
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill attackIc" id="start" style="top:370px; left:57px" th:value="10">
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill first hitRating" style="top:177px; left:299px" th:value="10">
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill first hitRating" style="top:370px; left:299px" th:value="10">
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill first hitRating" style="top:562px; left:299px" th:value="10">
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill second attackIc hpFlat"  style="top:211px; left:543px" th:value="10" th:value1="25">
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill second attackIc elementRs" style="top:370px; left:543px" th:value="10" th:value1="2">
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill second attackIc mpFlat" style="top:531px; left:547px" th:value="10" th:value1="30">
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill third hpIc" style="top:178px; left:786px" th:value="3">
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill third elementRs" style="top:370px; left:786px" th:value="2">
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill third mpIc" style="top:562px; left:786px" th:value="5">
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill fourth attackIc attackSpeedIc" style="top:370px; left:1027px" th:value="20" th:value1="2">
+        </div>
+    </div>
 </div>
 
 </html>
