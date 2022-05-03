@@ -61,3 +61,6 @@ a:hover {
     background: #32e732;
     border: none;
 }
+.zodiacSkill:disabled{
+    background: red;
+}

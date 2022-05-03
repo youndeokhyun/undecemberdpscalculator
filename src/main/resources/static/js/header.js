@@ -16,9 +16,12 @@ $(document).ready(function () {
         localStorage.setItem("lv", $(".level").val());
         localStorage.setItem("sp", $(".skillPoint").val());
     })
+
     // 처음을 제외한 모든 체크박스 비활성화
     $(".zodiacSkill").prop("disabled", true);
     $("#start").prop("disabled", false);
+    $(".start").prop("disabled", false);
+
     // 체크시 다음 스킬 체크박스 활성화 및 다음스킬 페이지 활성화
     let cbLength = 0
     $(".zodiacSkill").on("click", function () {
@@ -80,7 +83,6 @@ $(document).ready(function () {
     function cbDisabled() {
         switch (cbLength) {
             case 0:
-                $("#start").prop("disabled", false);
                 $(".first").prop("disabled" , true);
                 break
             case 1:
