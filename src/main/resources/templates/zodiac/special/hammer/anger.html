@@ -4,10 +4,39 @@
 <head>
 </head>
 <div layout:fragment="contentFragment">
-    <input type="checkbox" name="zodiacSkill" class="zodiacSkill">
-    <input type="checkbox" name="zodiacSkill" class="zodiacSkill">
-    <input type="checkbox" name="zodiacSkill" class="zodiacSkill">
-    <input type="checkbox" name="zodiacSkill" class="zodiacSkill">
+    <div class="container">
+        <div class="imgBox">
+            <img src="/static/img/special/hammer/anger.png" class="img" alt="망치" style="width: 1120px;">
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill attackIc" id="start" style="top:60%; left:50%" th:value="15">
+
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill first" style="top:100px; left:-200px" th:value="10">
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill second attackCritical attackCriticalDmg"  style="top:100px; left:0px" th:value="50" th:value1="25">
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill third " style="top:100px; left:200px" th:value1="2">
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill fourth nomalIc" style="top:100px; left:400px" th:value="40">
+
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill third moveSpeed" style="top:270px; left:200px" th:value1="3">
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill fourth" style="top:270px; left:400px" th:value="30">
+
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill first" style="top:460px; left:-200px" th:value="10">
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill second"  style="top:460px; left:0px" th:value="30">
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill third " style="top:460px; left:200px" th:value1="2">
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill fourth physicFlat" style="top:460px; left:400px" th:value="30">
+
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill first" style="top:100px; left:63%" th:value="10">
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill second"  style="top:100px; left:83%" th:value="30">
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill third" style="top:100px; left:103%" th:value1="2">
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill fourth" style="top:100px; left:123%" th:value="30">
+
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill third" style="top:270px; left:63%" th:value1="2">
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill fourth" style="top:270px; left:83%" th:value="30">
+
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill first" style="top:460px; left:63%" th:value="10">
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill second"  style="top:460px; left:83%" th:value="30">
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill third" style="top:460px; left:103%" th:value1="2">
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill fourth" style="top:460px; left:123%" th:value="30">
+
+        </div>
+    </div>
 </div>
 
 </html>
