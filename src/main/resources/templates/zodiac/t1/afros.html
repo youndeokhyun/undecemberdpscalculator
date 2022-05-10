@@ -3,19 +3,37 @@
       layout:decorate="~{layout/default_layout}">
 <head>
 </head>
+
 <div layout:fragment="contentFragment">
     <div class="container">
-            <div class="imgBox">
-                <img src="/static/img/t1/afros.png" class="img" alt="아프로스" style="width: 1120px;">
-                <input type="checkbox" name="zodiacSkill" class="zodiacSkill attackIc hpFlat" id="start" style="top:372px; left:132px" th:value="5" th:value1="13">
-                <input type="checkbox" name="zodiacSkill" class="zodiacSkill first attackIc" style="top:191px; left:294px" th:value="10">
-                <input type="checkbox" name="zodiacSkill" class="zodiacSkill first attackSpeedIc" style="top:558px; left:294px" th:value="2">
-                <input type="checkbox" name="zodiacSkill" class="zodiacSkill second attackHitRating"  style="top:228px; left:537px" th:value="10">
-                <input type="checkbox" name="zodiacSkill" class="zodiacSkill second attackHitRating" style="top:515px; left:537px" th:value="10">
-                <input type="checkbox" name="zodiacSkill" class="zodiacSkill third attackIc" style="top:193px; left:778px" th:value="10">
-                <input type="checkbox" name="zodiacSkill" class="zodiacSkill third attackSpeedIc" style="top:558px; left:780px" th:value="2">
-                <input type="checkbox" name="zodiacSkill" class="zodiacSkill fourth attackIc attackSpeedIc" style="top:368px; left:964px" th:value="20" th:value1="2">
+        <div class="imgBox">
+            <img src="/static/img/t1/afros.png" class="img" alt="아프로스" style="width: 1120px;">
+            <!--                시작   -->
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill start attackIc hpFlat"
+                   style="top:372px; left:132px" th:value="5">
+            <!--                위 부분 -->
+            <div class="afrosTop">
+                <input type="checkbox" name="zodiacSkill" class="zodiacSkill first attackIc"
+                       style="top:191px; left:294px" th:value="10">
+                <input type="checkbox" name="zodiacSkill" class="zodiacSkill attackHitRating"
+                       style="top:228px; left:537px">
+                <input type="checkbox" name="zodiacSkill" class="zodiacSkill last attackIc"
+                       style="top:193px; left:778px" th:value="10">
             </div>
+            <!--                아래 부분 -->
+            <div class="afrosBottom">
+                <input type="checkbox" name="zodiacSkill" class="zodiacSkill first attackSpeedIc"
+                       style="top:558px; left:294px" th:value1="2">
+                <input type="checkbox" name="zodiacSkill" class="zodiacSkill attackHitRating"
+                       style="top:515px; left:537px">
+                <input type="checkbox" name="zodiacSkill" class="zodiacSkill last  attackSpeedIc"
+                       style="top:558px; left:780px" th:value1="2">
+            </div>
+            <!--                끝 공통 -->
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill end attackIc attackSpeedIc "
+                   style="top:368px; left:964px" th:value="20" th:value1="2">
+        </div>
     </div>
 </div>
+
 </html>

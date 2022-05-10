@@ -17,28 +17,6 @@ $(document).ready(function () {
         localStorage.setItem("sp", $(".skillPoint").val());
     })
 
-    // 처음을 제외한 모든 체크박스 비활성화
-    $(".zodiacSkill").prop("disabled", true);
-    $("#start").prop("disabled", false);
-    $(".start").prop("disabled", false);
-
-    // 체크시 다음 스킬 체크박스 활성화 및 다음스킬 페이지 활성화
-    let cbLength = 0
-    $(".zodiacSkill").on("click", function () {
-
-        let usedSkillPoint = $(".usedSkillPoint").val();
-        if ($(this).is(":checked") === true) {
-            usedSkillPoint++
-            cbLength++
-            localStorage.setItem("usp", usedSkillPoint);
-        } else {
-            usedSkillPoint--
-            cbLength--
-            localStorage.setItem("usp", usedSkillPoint);
-        }
-        $(".usedSkillPoint").val(localStorage.getItem("usp"))
-        cbDisabled();
-    })
 
     // 저장한 값을 출력
     $(".level").val(localStorage.getItem("lv"));
@@ -47,7 +25,7 @@ $(document).ready(function () {
 
 
     //출력한 skillPoint를 체크박스 체크/해체 마다 1씩 감소/증가
-    $(".zodiacSkill").change(function () {
+    $("input[name=zodiacSkill]").change(function () {
         if ($(this).is(':checked')) {
             $(".skillPoint").val(parseInt(localStorage.getItem("sp")) - 1);
             if ($(".skillPoint").val() < 0) {
@@ -71,7 +49,7 @@ $(document).ready(function () {
             $(".usedSkillPoint").val(0);
             $("#attackDmg").val(0);
             $(".zodiacSkill").prop("disabled", true);
-            $("#start").prop("disabled", false);
+            $(".start").prop("disabled", false);
             cbLength = 0;
         } else {
             return
@@ -80,32 +58,7 @@ $(document).ready(function () {
 
 
     // 체크시 다음 스킬 체크박스 활성화
-    function cbDisabled() {
-        switch (cbLength) {
-            case 0:
-                $(".first").prop("disabled" , true);
-                break
-            case 1:
-                $(".first").prop("disabled", false);
-                $(".second").prop("disabled", true);
-                break
-            case 2:
-                $(".second").prop("disabled", false);
-                $(".third").prop("disabled", true);
-                break
-            case 3:
-                $(".third").prop("disabled", false);
-                $(".fourth").prop("disabled", true);
-                break
-            case 4:
-                $(".fourth").prop("disabled", false);
-                $(".fifth").prop("disabled", true);
-                break
-            case 5:
-                $(".fifth").prop("disabled", false);
-                break
-        }
-    }
+
     //
     // // 체크박스 체크한 개수에 따라 다음 스킬페이지 오픈
     // function nextSkillSDisabled() {

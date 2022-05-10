@@ -5,20 +5,64 @@
 </head>
 <div layout:fragment="contentFragment">
     <div class="container">
-      <div class="imgBox">
-         <img src="/static/img/t4/freere.png" class="img" alt="프리레" style="width: 1120px;">
-         <input type="checkbox" name="zodiacSkill" class="zodiacSkill attackIc" id="start" style="top:543px; left:87px" th:value="10">
-         <input type="checkbox" name="zodiacSkill" class="zodiacSkill first meleeIc" style="top:350px; left:196px" th:value="10">
-         <input type="checkbox" name="zodiacSkill" class="zodiacSkill first attackSpeedIc" style="top:422px; left:299px" th:value="2">
-         <input type="checkbox" name="zodiacSkill" class="zodiacSkill first arrowIc" style="top:508px; left:410px" th:value="10">
-         <input type="checkbox" name="zodiacSkill" class="zodiacSkill first continuousIc" style="top:604px; left:516px" th:value="10">
-         <input type="checkbox" name="zodiacSkill" class="zodiacSkill second attackIc attackRating"  style="top:343px; left:540px" th:value="10" th:value1="10">
-         <input type="checkbox" name="zodiacSkill" class="zodiacSkill third attackCritical" style="top:249px; left:764px" th:value="10">
-         <input type="checkbox" name="zodiacSkill" class="zodiacSkill third continuousIc" style="top:370px; left:812px" th:value="10">
-         <input type="checkbox" name="zodiacSkill" class="zodiacSkill third wideArea" style="top:495px; left:811px" th:value="20">
-         <input type="checkbox" name="zodiacSkill" class="zodiacSkill fourth attackIc mpFlat" style="top:274px; left:1027px" th:value="10" th:value1="30">
-      </div>
+        <div class="imgBox">
+            <img src="/static/img/t4/freere.png" class="img" alt="프리레" style="width: 1120px;">
+            <div>
+                <input type="checkbox" name="zodiacSkill" class="zodiacSkill start attackIc "
+                       style="top:543px; left:87px" th:value="10">
+            </div>
+            <div>
+                <input type="checkbox" name="zodiacSkill" class="zodiacSkill first meleeIc"
+                       style="top:350px; left:196px" th:value="10">
+            </div>
+            <div>
+                <input type="checkbox" name="zodiacSkill" class="zodiacSkill first attackSpeedIc"
+                       style="top:422px; left:299px" th:value="2">
+            </div>
+            <div>
+                <input type="checkbox" name="zodiacSkill" class="zodiacSkill first arrowIc"
+                       style="top:508px; left:410px" th:value="10">
+            </div>
+            <div>
+                <input type="checkbox" name="zodiacSkill" class="zodiacSkill first continuousIc"
+                       style="top:604px; left:516px" th:value="10">
+            </div>
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill second attackIc attackRating"
+                   style="top:343px; left:540px" th:value="10" th:value1="10">
+            <div>
+                <input type="checkbox" name="zodiacSkill" class="zodiacSkill third attackCritical"
+                       style="top:249px; left:764px" th:value="10">
+            </div>
+            <div>
+                <input type="checkbox" name="zodiacSkill" class="zodiacSkill third continuousIc"
+                       style="top:370px; left:812px" th:value="10">
+            </div>
+            <div>
+                <input type="checkbox" name="zodiacSkill" class="zodiacSkill third wideArea"
+                       style="top:495px; left:811px"
+                       th:value="20">
+            </div>
+            <div>
+                <input type="checkbox" name="zodiacSkill" class="zodiacSkill fourth attackIc mpFlat"
+                       style="top:274px; left:1027px" th:value="10" th:value1="30">
+            </div>
+        </div>
     </div>
+    <script>
+        $(document).ready(function () {
+            $(".zodiacSkill").on("click", function () {
+                if ($(".first").is(":checked") === true) {
+                    $(".second").prop("disabled", false);
+                }
+                if($(".second").is(":checked") === true){
+                    $(".third").prop("disabled", false);
+                }
+                if($(".third").is(":checked") === true){
+                    $(".fourth").prop("disabled", false);
+                }
+            })
+        })
+    </script>
 </div>
 
 </html>
