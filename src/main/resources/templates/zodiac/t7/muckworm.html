@@ -7,17 +7,86 @@
     <div class="container">
         <div class="imgBox">
             <img src="/static/img/t7/muckworm.png" class="img" alt="구더기" style="width: 1120px;">
-            <input type="checkbox" name="zodiacSkill" class="zodiacSkill start int"  style="top:237px; left:389px" th:value="5">
-            <input type="checkbox" name="zodiacSkill" class="zodiacSkill start str"  style="top:490px; left:148px" th:value="5">
-            <input type="checkbox" name="zodiacSkill" class="zodiacSkill start dex"  style="top:241px; left:875px" th:value="5">
-            <input type="checkbox" name="zodiacSkill" class="zodiacSkill start nomalIc"  style="top:312px; left:162px" th:value="40">
-            <input type="checkbox" name="zodiacSkill" class="zodiacSkill first int" style="top:270px; left:580px" th:value="5">
-            <input type="checkbox" name="zodiacSkill" class="zodiacSkill first str" style="top:486px; left:467px" th:value="5">
-            <input type="checkbox" name="zodiacSkill" class="zodiacSkill first dex" style="top:376px; left:803px" th:value="5" >
-            <input type="checkbox" name="zodiacSkill" class="zodiacSkill second arrowIc"  style="top:396px; left:646px" th:value="30">
-            <input type="checkbox" name="zodiacSkill" class="zodiacSkill wideAreaIc"  style="top:382px; left:306px" th:value="30">
-            <input type="checkbox" name="zodiacSkill" class="zodiacSkill second meleeIc"  style="top:495px; left:948px" th:value="30">
+            <div class="intBox">
+                <input type="checkbox" name="zodiacSkill" class="zodiacSkill start int" style="top:237px; left:389px"
+                       th:value="5">
+                <input type="checkbox" name="zodiacSkill" class="zodiacSkill secondInt  int"
+                       style="top:270px; left:580px"
+                       th:value="5">
+            </div>
+            <div class="strBox">
+                <input type="checkbox" name="zodiacSkill" class="zodiacSkill start str" style="top:490px; left:148px"
+                       th:value="5">
+                <input type="checkbox" name="zodiacSkill" class="zodiacSkill secondStr str"
+                       style="top:486px; left:467px"
+                       th:value="5">
+            </div>
+            <div class="dexBox">
+                <input type="checkbox" name="zodiacSkill" class="zodiacSkill start dex" style="top:241px; left:875px"
+                       th:value="5">
+                <input type="checkbox" name="zodiacSkill" class="zodiacSkill secondDex  dex"
+                       style="top:376px; left:803px"
+                       th:value="5">
+            </div>
+            <div>
+                <input type="checkbox" name="zodiacSkill" class="zodiacSkill  arrowIc" style="top:396px; left:646px"
+                       th:value="30">
+            </div>
+            <div>
+                <input type="checkbox" name="zodiacSkill" class="zodiacSkill wideAreaIc" style="top:382px; left:306px"
+                       th:value="30">
+            </div>
+            <div>
+                <input type="checkbox" name="zodiacSkill" class="zodiacSkill  meleeIc" style="top:495px; left:948px"
+                       th:value="30">
+            </div>
+            <div>
+                <input type="checkbox" name="zodiacSkill" class="zodiacSkill alone nomalIc"
+                       style="top:312px; left:162px"
+                       th:value="40">
+            </div>
         </div>
     </div>
+    <script>
+        $(document).ready(function () {
+            $(".alone").prop("disabled" , false);
+            $(".intBox").children('.secondInt').click(function () {
+                if ($(this).is(":checked") === true) {
+                    $(".wideAreaIc").prop("disabled", false);
+                    $(".arrowIc").prop("disabled", false);
+                }
+            })
+            $(".dexBox").children('.secondDex').click(function () {
+                if ($(this).is(":checked") === true) {
+                    $(".meleeIc").prop("disabled", false);
+                    $(".arrowIc").prop("disabled", false);
+                }
+            })
+            $(".strBox").children('.secondStr').click(function () {
+                if ($(this).is(":checked") === true) {
+                    $(".meleeIc").prop("disabled", false);
+                    $(".wideAreaIc").prop("disabled", false);
+                }
+            })
+            $(".wideAreaIc").click(function (){
+                if($(this).is(":checked") === true) {
+                    $(".intBox").children('.secondInt').prop("disabled", false);
+                    $(".strBox").children('.secondStr').prop("disabled", false);
+                }
+            })
+            $(".arrowIc").click(function (){
+                if($(this).is(":checked") === true) {
+                    $(".intBox").children('.secondInt').prop("disabled", false);
+                    $(".dexBox").children('.secondDex').prop("disabled", false);
+                }
+            })
+            $(".meleeIc").click(function (){
+                if($(this).is(":checked") === true) {
+                    $(".dexBox").children('.secondDex').prop("disabled", false);
+                    $(".strBox").children('.secondStr').prop("disabled", false);
+                }
+            })
+        })
+    </script>
 </div>
 </html>

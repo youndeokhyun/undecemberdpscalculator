@@ -27,6 +27,7 @@ $(document).ready(function () {
     //출력한 skillPoint를 체크박스 체크/해체 마다 1씩 감소/증가
     $("input[name=zodiacSkill]").change(function () {
         if ($(this).is(':checked')) {
+            // 체크 해제 되는 갯수만큼 - + 되게 하기
             $(".skillPoint").val(parseInt(localStorage.getItem("sp")) - 1);
             if ($(".skillPoint").val() < 0) {
                 alert("포인트를 모두 소진했습니다");
