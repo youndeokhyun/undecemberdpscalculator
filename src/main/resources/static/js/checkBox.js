@@ -29,9 +29,11 @@ $(document).ready(function (){
         if($(this).is(":checked") === true){
             $(this).next().prop("disabled" , false);
             $(this).prev().prop("disabled" , false);
+        }
+        if($(".first").is(":checked") === true){
+             $(".start").prop("disabled" , true);
         }else{
-            $(this).nextAll().prop("checked" , false);
-            $(this).nextAll().prop("disabled" , true);
+            $(".start").prop("disabled" , false);
         }
     })
 
