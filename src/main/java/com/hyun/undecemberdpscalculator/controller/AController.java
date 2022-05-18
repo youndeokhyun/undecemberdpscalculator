@@ -19,7 +19,7 @@ public class AController {
 
     @GetMapping("/")
     public String mainPage(Model model){
-        return "main";
+        return "index";
     }
 
     @PostMapping("/zodiacform")
