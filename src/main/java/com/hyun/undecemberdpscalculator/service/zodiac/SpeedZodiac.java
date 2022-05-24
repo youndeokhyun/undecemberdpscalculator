@@ -1,6 +1,5 @@
 package com.hyun.undecemberdpscalculator.service.zodiac;
 
-import com.hyun.undecemberdpscalculator.dto.DmgDto;
 import com.hyun.undecemberdpscalculator.service.ZodiacAB;
 import org.springframework.stereotype.Service;
 

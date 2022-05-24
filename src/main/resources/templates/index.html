@@ -1,0 +1,41 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/default_layout}" lang="ko">
+<head>
+    <title>메인</title>
+</head>
+<div layout:fragment="contentFragment" class="container">
+    <div class="container">
+        <div class="weapon text-center">
+            <form th:action="@{/zodiacform}" method="post">
+                <h3> 무기 옵션</h3>
+                <label class=" mb-3 wOptionName"> 무기 속도 : </label>
+                <input type="number" class="wValue mb-3 mr-3" name="wpSpeed">
+                <label class=" mb-3 wOptionName"> 무기 치명도 : </label>
+                <input type="number" class="wValue mb-3 mr-3" name="wpCritical">
+                <label class="mb-3 wOptionName">최소 무기 공격력 : </label>
+                <input type="number" class="wValue mb-3 mr-3" name="wpMinFlat">
+                <label class=" mb-3 wOptionName">최대 무기 공격력 : </label>
+                <input type="number" class="wValue mb-3 mr-3" name="wpMaxFlat">
+                <hr>
+                <h3> 나머지 장비 </h3>
+                <label class=" mb-3 wOptionName">최소 물리 플랫 : </label>
+                <input type="number" class="wValue mb-3 mr-3" name="wMinElementFlat">
+                <label class=" mb-3 wOptionName">최대 물리 플랫 : </label>
+                <input type="number" class="wValue mb-3 mr-3" name="wMaxElementFlat">
+                <label class=" mb-3 wOptionName">치명도 : </label>
+                <input type="number" class="wValue mb-3 mr-3" name="wCritical">
+                <label class=" mb-3 wOptionName">치명타 피해 : </label>
+                <input type="number" class="wValue mb-3 mr-3" name="wCriticalDmg">
+                <label class=" mb-3 wOptionName">공격/시전 속도 : </label>
+                <input type="number" class="wValue mb-3 mr-3" name="wSpeed">
+                <label class=" mb-3 wOptionName"> 피해 % : </label>
+                <input type="number" class="wValue mb-3 mr-3" name="wNomalIc"><hr>
+                <button type="submit" class="btn-primary"> 확인 </button>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+</html>

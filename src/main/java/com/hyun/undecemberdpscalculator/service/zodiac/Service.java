@@ -1,13 +1,10 @@
 package com.hyun.undecemberdpscalculator.service.zodiac;
 
 
-import com.hyun.undecemberdpscalculator.dto.DmgDto;
-import org.springframework.context.annotation.Bean;
-
-import java.util.List;
+import com.hyun.undecemberdpscalculator.dto.ZodiacDto;
 
 public class Service {
-    DmgDto dto = new DmgDto();
+    ZodiacDto dto = new ZodiacDto();
 
 //    public int test() {
 //
