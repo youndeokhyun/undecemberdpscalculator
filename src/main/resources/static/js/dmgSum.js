@@ -12,4 +12,10 @@ $(document).ready(function (){
         $("#attackDmg").val(attackAll);
         console.log(attackAll)
     })
+
+    // $(".btn-submit").click(function (){
+    //     if($(".wValue").val() == null){
+    //          $(this).removeAttr("name");
+    //     }
+    // })
  })

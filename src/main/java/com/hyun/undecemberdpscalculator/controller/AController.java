@@ -2,6 +2,7 @@ package com.hyun.undecemberdpscalculator.controller;
 
 import com.hyun.undecemberdpscalculator.dto.WeaponDto;
 import com.hyun.undecemberdpscalculator.dto.ZodiacDto;
+import com.hyun.undecemberdpscalculator.service.Calculator;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,8 +22,9 @@ public class AController {
 
     @PostMapping("/zodiacform")
     public String zodiacApply(HttpServletRequest request , ZodiacDto zDto , WeaponDto wDto){
+        Calculator cal = new Calculator();
         String referer = request.getHeader("referer");
-
+        System.out.println(cal.test());
         return "redirect:"+referer;
     }
 

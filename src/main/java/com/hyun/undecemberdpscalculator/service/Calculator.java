@@ -1,20 +1,25 @@
 package com.hyun.undecemberdpscalculator.service;
 
+import com.hyun.undecemberdpscalculator.dto.WeaponDto;
+import com.hyun.undecemberdpscalculator.dto.ZodiacDto;
 import org.springframework.stereotype.Service;
 
 
 @Service
-public class PhysicsCalculator implements DmgInter{
+public class Calculator implements DmgInter{
 
+    ZodiacDto zoDto = new ZodiacDto();
+    WeaponDto wDto = new WeaponDto();
 
     public long minBasicDmg , maxBasicDmg; // 최소 최대 기본 피해
     public long minAllDmg , maxAllDmg; //  전체 계산식 최소 최대
 
-    @Override
-    public long minBasicCalculator() {
-       return 0;
-
+    public double test(){
+        return wDto.getWpSpeed();
     }
+
+    @Override
+    public long minBasicCalculator() { return 0;}
 
     @Override
     public long maxBasicCalculator() {
