@@ -18,11 +18,5 @@ public class WeaponDto {
     private double wNomalIc;
 
 
-     @Builder
-    public WeaponDto(double wpCritical , double wpSpeed){
-            this.wpCritical = wpCritical;
-            this.wpSpeed = wpSpeed;
-     }
-
 
 }
