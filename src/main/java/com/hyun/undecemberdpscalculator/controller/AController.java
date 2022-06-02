@@ -13,18 +13,26 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 public class AController {
 
-
+    Calculator cal = new Calculator();
 
     @GetMapping("/")
     public String mainPage(Model model){
+
         return "index";
     }
 
-    @PostMapping("/zodiacform")
-    public String zodiacApply(HttpServletRequest request , ZodiacDto zDto , WeaponDto wDto){
-        Calculator cal = new Calculator();
+    @PostMapping("/")
+    public String weaponApply(HttpServletRequest request , WeaponDto wDto){
+
+        System.out.println(wDto.getWpSpeed());
         String referer = request.getHeader("referer");
-        System.out.println(cal.test());
+        return "redirect:"+referer;
+    }
+
+
+    @PostMapping("/zodiacform")
+    public String zodiacApply(HttpServletRequest request , ZodiacDto zDto){
+        String referer = request.getHeader("referer");
         return "redirect:"+referer;
     }
 
