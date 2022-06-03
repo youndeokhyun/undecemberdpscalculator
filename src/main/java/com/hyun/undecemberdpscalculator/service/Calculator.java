@@ -8,14 +8,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class Calculator implements DmgInter{
 
-    ZodiacDto zoDto = new ZodiacDto();
-    WeaponDto wDto = new WeaponDto();
-
     public long minBasicDmg , maxBasicDmg; // 최소 최대 기본 피해
     public long minAllDmg , maxAllDmg; //  전체 계산식 최소 최대
 
-    public double test(){
-        return wDto.getWpSpeed();
+    public double test(WeaponDto wDto){
+        double ws =  wDto.getWSpeed();
+        double wps = wDto.getWpSpeed();
+        return  ws * wps;
     }
 
     @Override
