@@ -17,6 +17,4 @@ public class WeaponDto {
     private double wpMinFlat , wpMaxFlat , wMinElementFlat , wMaxElementFlat;
     private double wNomalIc;
 
-
-
 }
