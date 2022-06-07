@@ -13,6 +13,7 @@ $(document).ready(function () {
     //     console.log(attackAll)
     // })
 
+
     $(".content-body:not(.weapon)").hide();
     $(".zodiacMainPage").click(function () {
         $(".zodiacTab").show();

@@ -15,7 +15,6 @@ public class Calculator implements DmgInter{
         double ws =  wDto.getWSpeed();
         double wps = wDto.getWpSpeed();
         return  ws * wps;
-
     }
 
     @Override

@@ -25,7 +25,6 @@ public class AController {
     public String weaponApply(HttpServletRequest request , WeaponDto wDto){
         String referer = request.getHeader("referer");
         double speed = cal.speed(wDto);
-
         return "redirect:"+referer;
     }
 
