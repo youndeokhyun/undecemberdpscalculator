@@ -43,6 +43,7 @@ a:hover {
    display: block;
    padding-bottom: 10px;
    text-decoration: none;
+   cursor: pointer;
 }
 /*조디악 찍는 페이지*/
 .imgBox{

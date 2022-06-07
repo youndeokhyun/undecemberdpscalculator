@@ -11,7 +11,7 @@ public class Calculator implements DmgInter{
     public long minBasicDmg , maxBasicDmg; // 최소 최대 기본 피해
     public long minAllDmg , maxAllDmg; //  전체 계산식 최소 최대
 
-    public double test(WeaponDto wDto){
+    public double speed(WeaponDto wDto){
         double ws =  wDto.getWSpeed();
         double wps = wDto.getWpSpeed();
         return  ws * wps;

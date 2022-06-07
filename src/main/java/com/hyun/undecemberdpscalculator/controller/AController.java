@@ -24,8 +24,8 @@ public class AController {
     @PostMapping("/")
     public String weaponApply(HttpServletRequest request , WeaponDto wDto){
         String referer = request.getHeader("referer");
+        double speed = cal.speed(wDto);
 
-        System.out.println(cal.test(wDto));
         return "redirect:"+referer;
     }
 

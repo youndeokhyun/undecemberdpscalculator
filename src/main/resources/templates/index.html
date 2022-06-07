@@ -5,52 +5,207 @@
 <head>
     <title>메인</title>
 </head>
-<div layout:fragment="contentFragment" class="container">
+<div layout:fragment="contentFragment">
     <div class="container">
-        <div class="weapon text-center">
-            <form  method="post">
+        <div class="weapon text-center content-body">
+            <form method="post">
                 <h3> 무기 옵션</h3>
                 <label class=" mb-3 wOptionName"> 무기 속도 : </label>
                 <input type="number" class="wValue mb-3 mr-3" name="wpSpeed">
-<!--                <label class=" mb-3 wOptionName"> 무기 치명도 : </label>-->
-<!--                <input type="number" class="wValue mb-3 mr-3" name="wpCritical">-->
-<!--                <label class="mb-3 wOptionName">최소 무기 공격력 : </label>-->
-<!--                <input type="number" class="wValue mb-3 mr-3" name="wpMinFlat">-->
-<!--                <label class=" mb-3 wOptionName">최대 무기 공격력 : </label>-->
-<!--                <input type="number" class="wValue mb-3 mr-3" name="wpMaxFlat">-->
+                <!--                <label class=" mb-3 wOptionName"> 무기 치명도 : </label>-->
+                <!--                <input type="number" class="wValue mb-3 mr-3" name="wpCritical">-->
+                <!--                <label class="mb-3 wOptionName">최소 무기 공격력 : </label>-->
+                <!--                <input type="number" class="wValue mb-3 mr-3" name="wpMinFlat">-->
+                <!--                <label class=" mb-3 wOptionName">최대 무기 공격력 : </label>-->
+                <!--                <input type="number" class="wValue mb-3 mr-3" name="wpMaxFlat">-->
                 <hr>
                 <h3> 나머지 장비 </h3>
-<!--                <label class=" mb-3 wOptionName">최소 물리 플랫 : </label>-->
-<!--                <input type="number" class="wValue mb-3 mr-3" name="wMinElementFlat">-->
-<!--                <label class=" mb-3 wOptionName">최대 물리 플랫 : </label>-->
-<!--                <input type="number" class="wValue mb-3 mr-3" name="wMaxElementFlat">-->
-<!--                <label class=" mb-3 wOptionName">치명도 : </label>-->
-<!--                <input type="number" class="wValue mb-3 mr-3" name="wCritical">-->
-<!--                <label class=" mb-3 wOptionName">치명타 피해 : </label>-->
-<!--                <input type="number" class="wValue mb-3 mr-3" name="wCriticalDmg">-->
+                <!--                <label class=" mb-3 wOptionName">최소 물리 플랫 : </label>-->
+                <!--                <input type="number" class="wValue mb-3 mr-3" name="wMinElementFlat">-->
+                <!--                <label class=" mb-3 wOptionName">최대 물리 플랫 : </label>-->
+                <!--                <input type="number" class="wValue mb-3 mr-3" name="wMaxElementFlat">-->
+                <!--                <label class=" mb-3 wOptionName">치명도 : </label>-->
+                <!--                <input type="number" class="wValue mb-3 mr-3" name="wCritical">-->
+                <!--                <label class=" mb-3 wOptionName">치명타 피해 : </label>-->
+                <!--                <input type="number" class="wValue mb-3 mr-3" name="wCriticalDmg">-->
                 <label class=" mb-3 wOptionName">공격/시전 속도 : </label>
                 <input type="number" class="wValue mb-3 mr-3" name="wSpeed">
-<!--                <label class=" mb-3 wOptionName"> 피해 합 % : </label>-->
-<!--                <input type="number" class="wValue mb-3 mr-3" name="wNomalIc"><hr>-->
+                <!--                <label class=" mb-3 wOptionName"> 피해 합 % : </label>-->
+                <!--                <input type="number" class="wValue mb-3 mr-3" name="wNomalIc"><hr>-->
                 <h3> 스킬&링크 룬</h3>
-<!--                <label class=" mb-3 wOptionName">스킬 플랫 : </label>-->
-<!--                <input type="number" class="wValue mb-3 mr-3" name="wMinElementFlat">-->
-<!--                <label class=" mb-3 wOptionName">스킬 피해 % : </label>-->
-<!--                <input type="number" class="wValue mb-3 mr-3" name="wMaxElementFlat">-->
-<!--                <label class=" mb-3 wOptionName"> 물리 증폭 : </label>-->
-<!--                <input type="number" class="wValue mb-3 mr-3" name="wCritical">-->
-<!--                <label class=" mb-3 wOptionName"> 타격 증폭: </label>-->
-<!--                <input type="number" class="wValue mb-3 mr-3" name="wCritical">-->
-<!--                <label class=" mb-3 wOptionName"> 피해 증폭: </label>-->
-<!--                <input type="number" class="wValue mb-3 mr-3" name="wCritical">-->
-<!--                <label class=" mb-3 wOptionName"> 공격 속도 증가: </label>-->
-<!--                <input type="number" class="wValue mb-3 mr-3" name="wCritical">-->
-<!--                <label class=" mb-3 wOptionName"> 공격 속도 증폭: </label>-->
-<!--                <input type="number" class="wValue mb-3 mr-3" name="wCritical">-->
+                <!--                <label class=" mb-3 wOptionName">스킬 플랫 : </label>-->
+                <!--                <input type="number" class="wValue mb-3 mr-3" name="wMinElementFlat">-->
+                <!--                <label class=" mb-3 wOptionName">스킬 피해 % : </label>-->
+                <!--                <input type="number" class="wValue mb-3 mr-3" name="wMaxElementFlat">-->
+                <!--                <label class=" mb-3 wOptionName"> 물리 증폭 : </label>-->
+                <!--                <input type="number" class="wValue mb-3 mr-3" name="wCritical">-->
+                <!--                <label class=" mb-3 wOptionName"> 타격 증폭: </label>-->
+                <!--                <input type="number" class="wValue mb-3 mr-3" name="wCritical">-->
+                <!--                <label class=" mb-3 wOptionName"> 피해 증폭: </label>-->
+                <!--                <input type="number" class="wValue mb-3 mr-3" name="wCritical">-->
+                <!--                <label class=" mb-3 wOptionName"> 공격 속도 증가: </label>-->
+                <!--                <input type="number" class="wValue mb-3 mr-3" name="wCritical">-->
+                <!--                <label class=" mb-3 wOptionName"> 공격 속도 증폭: </label>-->
+                <!--                <input type="number" class="wValue mb-3 mr-3" name="wCritical">-->
                 <button type="submit" class="btn-primary"> 확인</button>
             </form>
         </div>
+        <div class="row zodiacTab  content-body">
+            <div class="col-lg-3 zodiacTabMain">
+                <div class="tear tear1">
+                    <h3>티어 1</h3>
+                    <div class="zodiacName afros">아프로스  (카운트)</div>
+                    <!--                <a th:href="@{/zodiac/t1/cliff}" class="zodiacName"><span>절벽  (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t1/grassland}" class="zodiacName"><span>초원  (카운트)</span></a>-->
+                </div>
+                <div class="tear">
+                    <h3>티어 2</h3>
+                    <!--                <a th:href="@{/zodiac/t2/explorer}" class="zodiacName"><span>탐험가  (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t2/vagabond}" class="zodiacName"><span>방랑자  (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t2/bog}" class="zodiacName"><span>늪지 (카운트)</span></a>-->
+                    <a th:href="@{/zodiac/t2/forest}" class="zodiacName"><span>삼림 (카운트)</span></a>
+                </div>
+                <div class="tear">
+                    <h3>티어 3</h3>
+                    <!--                <a th:href="@{/zodiac/t3/eunos}" class="zodiacName"><span>에우노스  (카운트)</span></a>-->
+                    <a th:href="@{/zodiac/t3/rock}" class="zodiacName"><span>바위  (카운트)</span></a>
+                    <!--                <a th:href="@{/zodiac/t3/jewel}" class="zodiacName"><span>보석  (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t3/gold}" class="zodiacName"><span>황금  (카운트)</span></a>-->
+                </div>
+                <div class="tear">
+                    <h3>티어 4</h3>
+                    <a th:href="@{/zodiac/t4/freere}" class="zodiacName"><span>프리레  (카운트)</span></a>
+                    <!--                <a th:href="@{/zodiac/t4/seed}" class="zodiacName"><span>씨앗  (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t4/leaf}" class="zodiacName"><span>잎사귀  (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t4/petal}" class="zodiacName"><span>꽃잎 (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t4/stem}" class="zodiacName"><span>줄기  (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t4/root}" class="zodiacName"><span>뿌리  (카운트)</span></a>-->
+                </div>
+                <div class="tear">
+                    <h3>티어 5</h3>
+                    <a th:href="@{/zodiac/t5/contrast}" class="zodiacName"><span>명암  (카운트)</span></a>
+                    <!--                <a th:href="@{/zodiac/t5/glare}" class="zodiacName"><span>섬광  (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t5/fog}" class="zodiacName"><span>안개  (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t5/hira}" class="zodiacName"><span>히라  (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t5/dew}" class="zodiacName"><span>이슬  (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t5/frost}" class="zodiacName"><span>서리  (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t5/lightning}" class="zodiacName"><span>번개  (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t5/rainbow}" class="zodiacName"><span>무지개  (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t5/fruit}" class="zodiacName"><span>열매 (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t5/mine}" class="zodiacName"><span>광산  (카운트)</span></a>-->
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-3">
+                <div class="tear">
+                    <h3>티어 6</h3>
+                    <a th:href="@{/zodiac/t6/nemera}" class="zodiacName"><span>네메라  (카운트)</span></a>
+                    <!--                <a th:href="@{/zodiac/t6/breath}" class="zodiacName"><span>숨결  (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t6/flow}" class="zodiacName"><span>흐름  (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t6/trai}" class="zodiacName"><span>트라이  (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t6/swimming}" class="zodiacName"><span>유영  (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t6/cycle}" class="zodiacName"><span>순환  (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t6/convection}" class="zodiacName"><span>대류  (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t6/laugh}" class="zodiacName"><span>웃음  (카운트)</span></a>-->
+                </div>
+                <div class="tear">
+                    <h3>티어 7</h3>
+                    <a th:href="@{/zodiac/t7/dust}" class="zodiacName"><span>먼지  (카운트)</span></a>
+                    <!--                <a th:href="@{/zodiac/t7/scent}" class="zodiacName"><span>향기  (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t7/stink}" class="zodiacName"><span>악취  (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t7/orthemis}" class="zodiacName"><span>오르테미스  (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t7/atmosphere}" class="zodiacName"><span>대기  (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t7/venom}" class="zodiacName"><span>맹독  (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t7/spider}" class="zodiacName"><span>거미  (카운트)</span></a>-->
+                    <a th:href="@{/zodiac/t7/muckworm}" class="zodiacName"><span>구더기  (카운트)</span></a>
+                </div>
+                <div class="tear">
+                    <h3>티어 8</h3>
+                    <!--                <a th:href="@{/zodiac/t8/corruption}" class="zodiacName"><span>부패  (카운트)</span></a>-->
+                    <a th:href="@{/zodiac/t8/plague}" class="zodiacName"><span>역병  (카운트)</span></a>
+                    <!--                <a th:href="@{/zodiac/t8/leia}" class="zodiacName"><span>라이아  (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t8/carpenter}" class="zodiacName"><span>목수  (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t8/farmer}" class="zodiacName"><span>농부  (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t8/hunter}" class="zodiacName"><span>사냥꾼  (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t8/shepherd}" class="zodiacName"><span>양치기  (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t8/blacksmith}" class="zodiacName"><span>대장장이  (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t8/shadow}" class="zodiacName"><span>음영  (카운트)</span></a>-->
+                    <!--                <a th:href="@{/zodiac/t8/aurora}" class="zodiacName"><span>오로라  (카운트)</span></a>-->
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-4">
+                <!--            <div>-->
+                <!--                <h3>전문화 - 강철</h3>-->
+                <!--                <a th:href="@{/zodiac/special/steel}" class="zodiacName"><span>강철  (카운트)</span></a>-->
+                <!--                <a th:href="@{/zodiac/special/sadness}" class="zodiacName"><span>슬픔  (카운트)</span></a>-->
+                <!--                <a th:href="@{/zodiac/special/tipan}" class="zodiacName"><span>티판  (카운트)</span></a>-->
+                <!--                <a th:href="@{/zodiac/special/torchlight}" class="zodiacName"><span>횃불  (카운트)</span></a>-->
+                <!--            </div>-->
+                <div>
+                    <h3>전문화 - 망치</h3>
+                    <a th:href="@{/zodiac/special/hammer}" class="zodiacName"><span>망치  (카운트)</span></a>
+                    <a th:href="@{/zodiac/special/anger}" class="zodiacName"><span>분노  (카운트)</span></a>
+                    <a th:href="@{/zodiac/special/bonfire}" class="zodiacName"><span>모닥불  (카운트)</span></a>
+                    <a th:href="@{/zodiac/special/flame}" class="zodiacName"><span>불꽃 (카운트)</span></a>
+                </div>
+                <!--            <div>-->
+                <!--                <h3>전문화 - 어둠</h3>-->
+                <!--                <a th:href="@{/zodiac/special/dark}" class="zodiacName"><span>어둠  (카운트)</span></a>-->
+                <!--                <a th:href="@{/zodiac/special/straw}" class="zodiacName"><span>스트라  (카운트)</span></a>-->
+                <!--                <a th:href="@{/zodiac/special/angler}" class="zodiacName"><span>낚시꾼  (카운트)</span></a>-->
+                <!--                <a th:href="@{/zodiac/special/vessel}" class="zodiacName"><span>돛단배  (카운트)</span></a>-->
+                <!--            </div>-->
+                <!--            <div>-->
+                <!--                <h3>전문화 - 광휘</h3>-->
+                <!--                <a th:href="@{/zodiac/special/sheen}" class="zodiacName"><span>광휘  (카운트)</span></a>-->
+                <!--                <a th:href="@{/zodiac/special/vacuum}" class="zodiacName"><span>진공  (카운트)</span></a>-->
+                <!--                <a th:href="@{/zodiac/special/waterfall}" class="zodiacName"><span>폭포  (카운트)</span></a>-->
+                <!--                <a th:href="@{/zodiac/special/pirate}" class="zodiacName"><span>해적  (카운트)</span></a>-->
+                <!--            </div>-->
+                <!--            <div>-->
+                <!--                <h3>전문화 - 카스폴</h3>-->
+                <!--                <a th:href="@{/zodiac/special/caspol}" class="zodiacName"><span>카스폴  (카운트)</span></a>-->
+                <!--                <a th:href="@{/zodiac/special/regret}" class="zodiacName"><span>후회  (카운트)</span></a>-->
+                <!--                <a th:href="@{/zodiac/special/lamplight}" class="zodiacName"><span>등불  (카운트)</span></a>-->
+                <!--                <a th:href="@{/zodiac/special/brazier}" class="zodiacName"><span>화로  (카운트)</span></a>-->
+                <!--            </div>-->
+                <!--            <div>-->
+                <!--                <h3>전문화 - 그늘</h3>-->
+                <!--                <a th:href="@{/zodiac/special/shade}" class="zodiacName"><span>그늘  (카운트)</span></a>-->
+                <!--                <a th:href="@{/zodiac/special/craving}" class="zodiacName"><span>욕망  (카운트)</span></a>-->
+                <!--                <a th:href="@{/zodiac/special/ganida}" class="zodiacName"><span>가니다  (카운트)</span></a>-->
+                <!--                <a th:href="@{/zodiac/special/brook}" class="zodiacName"><span>개울  (카운트)</span></a>-->
+                <!--            </div>-->
+            </div>
+        </div>
+        <div class="imgBox content-body afrosTab">
+            <img src="/static/img/t1/afros.png" class="img" alt="아프로스" style="width: 1120px;">
+            <!--                시작   -->
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill start attackIc hpFlat"
+                   style="top:372px; left:132px" th:value="5" >
+            <!--                위 부분 -->
+            <div class="afrosTop">
+                <input type="checkbox" name="zodiacSkill" class="zodiacSkill first attackIc"
+                       style="top:191px; left:294px" th:value="10">
+                <input type="checkbox" name="zodiacSkill" class="zodiacSkill attackHitRating"
+                       style="top:228px; left:537px">
+                <input type="checkbox" name="zodiacSkill" class="zodiacSkill last attackIc"
+                       style="top:193px; left:778px" th:value="10">
+            </div>
+            <!--                아래 부분 -->
+            <div class="afrosBottom">
+                <input type="checkbox" name="zodiacSkill" class="zodiacSkill first attackSpeedIc"
+                       style="top:558px; left:294px" th:value1="2" >
+                <input type="checkbox" name="zodiacSkill" class="zodiacSkill attackHitRating"
+                       style="top:515px; left:537px">
+                <input type="checkbox" name="zodiacSkill" class="zodiacSkill last  attackSpeedIc"
+                       style="top:558px; left:780px" th:value1="2">
+            </div>
+            <!--                끝 공통 -->
+            <input type="checkbox" name="zodiacSkill" class="zodiacSkill end attackIc attackSpeedIc "
+                   style="top:368px; left:964px" th:value="20" th:value1="2">
+        </div>
     </div>
-</div>
 </div>
 </html>

@@ -30,16 +30,16 @@
             <form th:action="@{/zodiacform}" method="post">
                 <input type="hidden" name="attackDmg" id="attackDmg">
             </form>
-            <button type="submit" class="submitBtn" onclick="dmgArr()"> 적용 </button>
+            <button type="submit" class="submitBtn"> 적용 </button>
 
         </div>
         <div class="headLink">
             <div class="row">
                 <div class="col-3">
-                    <a th:href="@{/}" class="mainPageLink"> 메인 페이지 </a>
+                    <button class="weaponPage btn-primary"> 장비 옵션 </button>
                 </div>
                 <div class="col-3">
-                    <a th:href="@{/zodiac}" calss="zodiacMainPage"> 조디악 메인페이지 </a>
+                    <button class="zodiacMainPage btn-primary"> 조디악 메인페이지 </button>
                 </div>
             </div>
         </div>
