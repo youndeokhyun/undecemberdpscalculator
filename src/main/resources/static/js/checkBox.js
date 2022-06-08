@@ -30,11 +30,7 @@ $(document).ready(function (){
             $(this).next().prop("disabled" , false);
             $(this).prev().prop("disabled" , false);
         }
-        if($(".first").is(":checked") === true){
-             $(".start").prop("disabled" , true);
-        }else{
-            $(".start").prop("disabled" , false);
-        }
+
     })
 
     // 체크시 다음 스킬 체크박스 활성화 및 다음스킬 페이지 활성화
@@ -50,5 +46,60 @@ $(document).ready(function (){
         }
         $(".usedSkillPoint").val(localStorage.getItem("usp"))
     })
-
+    // 삼림
+    $(".forestSe").on("click", function () {
+        if ($(this).is(":checked") === true) {
+            $(".center").prop("disabled", false)
+        }
+    })
+    //프리레
+    $(".zodiacSkill").on("click", function () {
+        if ($(".first").is(":checked") === true) {
+            $(".second").prop("disabled", false);
+        }
+        if($(".second").is(":checked") === true){
+            $(".third").prop("disabled", false);
+        }
+        if($(".third").is(":checked") === true){
+            $(".fourth").prop("disabled", false);
+        }
+    })
+    //구더기
+    $(".alone").prop("disabled" , false);
+    $(".intBox").children('.secondInt').click(function () {
+        if ($(this).is(":checked") === true) {
+            $(".wideAreaIc").prop("disabled", false);
+            $(".arrowIc").prop("disabled", false);
+        }
+    })
+    $(".dexBox").children('.secondDex').click(function () {
+        if ($(this).is(":checked") === true) {
+            $(".meleeIc").prop("disabled", false);
+            $(".arrowIc").prop("disabled", false);
+        }
+    })
+    $(".strBox").children('.secondStr').click(function () {
+        if ($(this).is(":checked") === true) {
+            $(".meleeIc").prop("disabled", false);
+            $(".wideAreaIc").prop("disabled", false);
+        }
+    })
+    $(".wideAreaIc").click(function (){
+        if($(this).is(":checked") === true) {
+            $(".intBox").children('.secondInt').prop("disabled", false);
+            $(".strBox").children('.secondStr').prop("disabled", false);
+        }
+    })
+    $(".arrowIc").click(function (){
+        if($(this).is(":checked") === true) {
+            $(".intBox").children('.secondInt').prop("disabled", false);
+            $(".dexBox").children('.secondDex').prop("disabled", false);
+        }
+    })
+    $(".meleeIc").click(function (){
+        if($(this).is(":checked") === true) {
+            $(".dexBox").children('.secondDex').prop("disabled", false);
+            $(".strBox").children('.secondStr').prop("disabled", false);
+        }
+    })
 })
