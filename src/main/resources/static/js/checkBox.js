@@ -30,7 +30,6 @@ $(document).ready(function (){
             $(this).next().prop("disabled" , false);
             $(this).prev().prop("disabled" , false);
         }
-
     })
 
     // 체크시 다음 스킬 체크박스 활성화 및 다음스킬 페이지 활성화
