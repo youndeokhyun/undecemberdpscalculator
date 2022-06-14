@@ -58,6 +58,8 @@ a:hover {
     appearance: none;
     cursor: pointer;
     transition: background 0.2s;
+    z-index: 1;
+    background-color: white;
 }
 .zodiacSkill:checked{
     background: #32e732;
@@ -65,4 +67,12 @@ a:hover {
 }
 .zodiacSkill:disabled{
     cursor: default;
+}
+.skillLine{
+    position: absolute;
+    border: 1px dashed mediumspringgreen;
+    z-index: -1;
+}
+.skillOption{
+    position: absolute;
 }

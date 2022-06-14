@@ -61,14 +61,30 @@ $(document).ready(function () {
         $(".muckwormTab").show();
         $(".content-body:not(.muckwormTab)").hide();
     })
-    $(".scent").click(function (){
+    // $(".scent").click(function (){
         $(".scentTab").show();
-        $(".content-body:not(.scentTab)").hide();
-    })
+    //     $(".content-body:not(.scentTab)").hide();
+    // })
     //t8
     $(".plague").click(function (){
         $(".plagueTab").show();
         $(".content-body:not(.plagueTab)").hide();
     })
-
+    // 전문화
+    $(".hammer").click(function (){
+        $(".hammerTab").show();
+        $(".content-body:not(.hammerTab)").hide();
+    })
+    $(".anger").click(function (){
+        $(".angerTab").show();
+        $(".content-body:not(.angerTab)").hide();
+    })
+    $(".bonfire").click(function (){
+        $(".bonfireTab").show();
+        $(".content-body:not(.bonfireTab)").hide();
+    })
+    $(".flame").click(function (){
+        $(".flameTab").show();
+        $(".content-body:not(.flameTab)").hide();
+    })
 })
