@@ -61,10 +61,10 @@ $(document).ready(function () {
         $(".muckwormTab").show();
         $(".content-body:not(.muckwormTab)").hide();
     })
-    // $(".scent").click(function (){
+    $(".scent").click(function (){
         $(".scentTab").show();
-    //     $(".content-body:not(.scentTab)").hide();
-    // })
+        $(".content-body:not(.scentTab)").hide();
+    })
     //t8
     $(".plague").click(function (){
         $(".plagueTab").show();
