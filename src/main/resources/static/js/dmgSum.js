@@ -75,10 +75,10 @@ $(document).ready(function () {
         $(".hammerTab").show();
         $(".content-body:not(.hammerTab)").hide();
     })
-    // $(".anger").click(function (){
+    $(".anger").click(function (){
         $(".angerTab").show();
-        // $(".content-body:not(.angerTab)").hide();
-    // })
+        $(".content-body:not(.angerTab)").hide();
+    })
     $(".bonfire").click(function (){
         $(".bonfireTab").show();
         $(".content-body:not(.bonfireTab)").hide();
