@@ -8,7 +8,6 @@ $(document).ready(function (){
         if($(this).is(":checked") === true){
             $(".first").prop("disabled" , false);
         }else{
-            $(".zodiacSkill").prop("checked" , false);
             $(".zodiacSkill").prop("disabled" , true);
             $(".start").prop("disabled" , false);
         }
